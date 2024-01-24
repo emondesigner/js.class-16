@@ -1,0 +1,183 @@
+/* COMMON CSS START */
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* COMMON CSS END */
+
+/* TEXT MODE CHANGE START */
+#textModeChange{
+    height: 100vh;
+    position: relative;
+}
+#textModeChange .btn1{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #cfc3c3;
+    top: 30px;
+    right: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* emon */
+}
+#textModeChange .info h1{
+    font-size: 35px;
+    padding: 20px 0 0 20px;
+}
+#textModeChange .info p{
+    font-size: 20px;
+    padding: 30px 0 0 20px;
+}
+#textModeChange .info.active h1{
+    color: rgb(240, 235, 235);
+}
+#textModeChange .info.active P{
+    color: rgb(249, 253, 246);
+}
+#textModeChange .info.active{
+    background-color: rgb(14, 14, 13);
+    height: 100vh;
+    width: 100%;
+}
+/* TEXT MODE CHANGE END */
+
+/* COUNTER START */
+#counter{
+    background-color: gray;
+    height: 100vh;
+}
+#counter .container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+#counter .container button, #counter .container input{
+   padding: 20px;
+   text-align: center;
+   border: none;
+   outline: none;
+}
+#counter .container button{
+    cursor: pointer;
+}
+/* COUNTER END */
+/* MOBILE NAV START */
+#dropdown{
+    position: relative;
+    background-color: #e0cccc;
+    height: 100vh;
+}
+#dropdown .btn{
+    height: 52px;
+    position: absolute;
+    width: 52px;
+    background-color: #862d2d;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+#dropdown .bar{
+    height: 100vh;
+    background-color: #862d2d;
+    position: absolute;
+    width:0PX;
+    right: 0;
+    transition: 0.4s;
+}
+#dropdown .bar.active{
+   width: 200px;
+}
+#dropdown .bar a{
+    color:#fff;
+    font-size: 20px;
+    padding: 50px  0 50px 20px;
+    display: block;
+}
+#dropdown .bar i{
+    margin-right: 10px;
+}
+/* MOBILE NAV END */
+
+
+/* RANGE START */
+#range{
+    height: 100vh;
+    background-color: #bb9999;
+}
+#range .container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(68, 7, 7);
+}
+#range .container input {
+    width: 600px;
+    height: 50px;
+   /* background: red; */
+}
+/* RANGE END */
+
+/* MODE CHANGE START */
+#mode-change{
+    height: 100vh;
+    background-color: rgb(36, 35, 35);
+    position: relative;
+}
+
+#mode-change .btn2{
+    height: 50px;
+    width: 50px;
+    background-color: #a86f6f;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 50px;
+}
+#mode-change .textInfo  h1{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 30px;
+}
+#mode-change .textInfo  p{
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    line-height: 55px;
+}
+#mode-change .textInfo{
+  height: 100vh;
+  width:0;
+  background-color: #c9bcbc;
+  color: #000;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#mode-change .textInfo.active{
+    width: 100%;
+}
+#mode-change .textInfo.active h1{
+    color: #000;
+}
+#mode-change .textInfo.active p{
+    color: #000;
+}
+/* MODE CHANGE END */
+
